@@ -5,7 +5,7 @@ import { ClassHandler } from "./classHandler";
 export interface ICommand {
     name: string;
     description: string;
-    execute(message: Message, args: any[]): void
+    execute(params: {message: Message, client: Client}, args: any[]): void
 }
 export class commandsHandler {
     collection: Collection<unknown, unknown>;
@@ -42,7 +42,7 @@ export class commandsHandler {
         try {
             const command = this.collection.get(commandName) as ICommand;
             console.log("Execute: " + command.name);
-            command.execute(message, args)
+            command.execute({message, client}, args)
         } catch (error) {
             console.error(error)
         }

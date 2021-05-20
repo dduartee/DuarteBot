@@ -1,5 +1,5 @@
-import { commandsHandler as CommandHandler } from "../commandsHandler";
-import { IEnvironmentParams, IEvent } from "../eventHandler";
+import { commandsHandler as CommandHandler } from "../handlers/commandsHandler";
+import { IEnvironmentParams, IEvent } from "../handlers/eventHandler";
 export class message implements IEvent {
     name: string;
     once: boolean;
