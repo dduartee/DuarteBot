@@ -1,8 +1,7 @@
 import { Client, Collection } from "discord.js";
 import { config } from "dotenv";
 import path from "path";
-import { commandsHandler } from "./commandsHandler";
-import { eventHandler as EventHandler } from "./eventHandler";
+import { eventHandler as EventHandler } from "./handlers/eventHandler";
 config()
 
 const collection = new Collection();

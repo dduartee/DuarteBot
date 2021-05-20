@@ -1,4 +1,4 @@
-import { IEnvironmentParams, IEvent } from "../eventHandler";
+import { IEnvironmentParams, IEvent } from "../handlers/eventHandler";
 
 export class ready implements IEvent {
     once: boolean;

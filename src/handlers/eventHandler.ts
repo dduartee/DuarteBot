@@ -1,7 +1,7 @@
 import { Client, Collection, Message } from "discord.js";
 import { readdirSync } from "fs";
 import { ClassHandler } from "./classHandler";
-import { prefix } from "../config.json";
+import { prefix } from "../../config.json";
 
 export interface IEvent {
     name: string;
